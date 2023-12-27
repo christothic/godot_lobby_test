@@ -1,0 +1,15 @@
+[gd_scene load_steps=2 format=3 uid="uid://bwq71nuulnwvh"]
+
+[ext_resource type="Script" path="res://Common/Console/Console.gd" id="1_ku6fl"]
+
+[node name="Console" type="TextEdit"]
+clip_contents = true
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 0.25
+offset_bottom = 0.119965
+theme_override_font_sizes/font_size = 16
+placeholder_text = "Console"
+editable = false
+wrap_mode = 1
+script = ExtResource("1_ku6fl")

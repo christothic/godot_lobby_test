@@ -1,0 +1,45 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+[application]
+
+config/name="Lobby test"
+run/main_scene="res://log_in_screen.tscn"
+config/features=PackedStringArray("4.2")
+
+[autoload]
+
+Console="*res://Common/Console/console.tscn"
+Log="*res://Common/Log.gd"
+WebRTC="*res://Common/WebRTCSingleton.gd"
+GameManager="*res://GameManager.gd"
+
+[debug]
+
+file_logging/enable_file_logging=true
+gdscript/warnings/unassigned_variable_op_assign=2
+gdscript/warnings/confusable_local_usage=2
+
+[dotnet]
+
+project/assembly_name="lobby-test"
+
+[input]
+
+console={
+"deadzone": 0.0,
+"events": [Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":0,"physical_keycode":96,"key_label":0,"unicode":0,"echo":false,"script":null)
+]
+}
+
+[rendering]
+
+renderer/rendering_method="gl_compatibility"
+textures/vram_compression/import_etc2_astc=true

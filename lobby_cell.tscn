@@ -1,0 +1,31 @@
+[gd_scene format=3 uid="uid://bsvah7tbld4h"]
+
+[node name="LobbyCell" type="Control"]
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 3
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 50.0
+grow_horizontal = 2
+
+[node name="Name" type="Label" parent="."]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.5
+anchor_bottom = 1.0
+text = "Lobby Name"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="IP" type="Label" parent="."]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_right = 1.0
+anchor_bottom = 1.0
+text = "Label Right
+"
+horizontal_alignment = 1
+vertical_alignment = 1
