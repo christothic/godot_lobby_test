@@ -1,6 +1,0 @@
-{
-    "godot_tools.editor_path": "e:\\Progs\\godot4\\godot4m.exe",
-    "godot_tools.gdscript_lsp_server_port": 6005,
-    "godot_tools.reconnect_attempts": 1
-    // "godot_tools.gdscript_lsp_server_protocol": "tcp"
-}
