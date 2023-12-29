@@ -1,7 +1,7 @@
 extends Control
 
 var lobby_list: VBoxContainer = null
-var lobby_url = "http://dev.devatstation.com:30069/api/v1/lobbies"
+var lobby_url = "http://www.devatstation.com:3000/api/v1/lobbies"
 var create_game: Button = null
 var join_game: Button = null
 var join_code: LineEdit = null

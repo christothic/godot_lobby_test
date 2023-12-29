@@ -1,7 +1,7 @@
 extends ItemList
 
 var request: HTTPRequest = null
-var lobby_url = "http://dev.devatstation.com:30069/api/v1/lobbies"
+var lobby_url = "http://www.devatstation.com:3000/api/v1/lobbies"
 
 func _ready():
     request = %HTTPRequest

@@ -23,7 +23,7 @@ func send(message) -> int:
 
     
 func start_websocket():
-    var err = ws.connect_to_url("ws://dev.devatstation.com:30069/ws")
+    var err = ws.connect_to_url("ws://www.devatstation.com:3000/ws")
     if err != OK:
         return err
     last_state = ws.get_ready_state()
@@ -113,7 +113,7 @@ func send_webrtc_data(type: String, offer_string: String):
                 var json = JSON.parse_string(body.get_string_from_utf8())
                 Log.everywhere("Response: " + JSON.stringify(json))
     )
-    request.request("http://dev.devatstation.com:30069/api/v1/lobbies/" + lobby_id + "/webrtc_" + type, headers, HTTPClient.METHOD_PUT, paramerters)
+    request.request("http://www.devatstation.com:3000/api/v1/lobbies/" + lobby_id + "/webrtc_" + type, headers, HTTPClient.METHOD_PUT, paramerters)
 
 func send_ice_candidate_to_server(media: String, index: int, sdp: String):
     var request: HTTPRequest = HTTPRequest.new()
@@ -136,4 +136,4 @@ func send_ice_candidate_to_server(media: String, index: int, sdp: String):
                 var json = JSON.parse_string(body.get_string_from_utf8())
                 Log.everywhere("Response: " + JSON.stringify(json))
     )
-    request.request("http://dev.devatstation.com:30069/api/v1/lobbies/" + lobby_id + "/webrtc_ice_candidate", headers, HTTPClient.METHOD_PUT, paramerters)
+    request.request("http://www.devatstation.com:3000/api/v1/lobbies/" + lobby_id + "/webrtc_ice_candidate", headers, HTTPClient.METHOD_PUT, paramerters)

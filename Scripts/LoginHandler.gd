@@ -1,7 +1,7 @@
 extends Control
 
 var username: LineEdit = null
-var login_url = "http://dev.devatstation.com:30069/api/v1/users"
+var login_url = "http://www.devatstation.com:3000/api/v1/users"
 var login_request: HTTPRequest = null
 
 func _ready():
